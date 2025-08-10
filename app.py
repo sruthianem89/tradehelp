@@ -8,7 +8,10 @@ import json
 import re
 
 load_dotenv()
-client = OpenAI()
+#client = OpenAI()
+
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 
 # Simple hardcoded users for MVP
