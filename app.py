@@ -88,8 +88,8 @@ def main_app():
             prices = fetch_prices(tickers)
             st.write("Current Prices:", prices)
             prompt = build_prompt(portfolio, prices)
-            st.write("Prompt sent to LLM:")
-            st.code(prompt)
+            #st.write("Prompt sent to LLM:")
+            #st.code(prompt)
             result_text = get_recommendations(prompt)
             if result_text:
                 # Strip whitespace
